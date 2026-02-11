@@ -1409,6 +1409,9 @@ form.orange .resume span {
 .header__menu {
   display: contents;
 }
+.header__nav {
+  transform: translate(30%, 0%);
+}
 .header__nav-list {
   display: flex;
   gap: 4px;
@@ -1564,9 +1567,17 @@ main {
     pointer-events: all;
   }
 }
+@media (max-width: 1500px) {
+  .header__nav {
+    transform: translate(18%, 0%);
+  }
+}
 @media (max-width: 1300px) {
   .header__row {
     padding: 24px 0;
+  }
+  .header__nav {
+    transform: none;
   }
   .header__contacts {
     flex-direction: column;
